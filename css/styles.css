@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /*height: 100vh;*/
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+header .contenedor-logo-menu{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header .contenedor-logo-menu button{
+    margin: 0px 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .contenedor-logo-menu button i{
+    color: #606060;
+    font-size: 20px;
+}
+
+header .contenedor-logo-menu img{
+    width: 60px;
+    cursor: pointer;
+}
+
+header .contenedor-buscador{
+    display: flex;
+    align-items: center;
+}
+
+header .contenedor-buscador .buscador{
+    display: none;
+}
+
+header .contenedor-buscador i{
+    color: #606060;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 12px;
+}
+
+
+header .contenedor-iconos-header{
+    display: flex;
+    align-items: center;
+}
+
+header .contenedor-iconos-header i{
+    font-size: 20px;
+    color: #606060;
+    margin: 12px;
+    cursor: pointer;
+}
+
+header .contenedor-iconos-header img{
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 78px;
+    z-index: -1;
+    margin-top: 15px;
+}
+
+main .video-principal iframe{
+    width: 100vw;
+    height: 70vh;
+}
+
+main .video-principal, main .info-video-principal{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+main .info-video-principal h3{
+    font-weight: normal;
+    color: #333;
+}
+
+main .info-video-principal .views-video-principal{
+    color: #606060;
+    margin: 0;
+    font-size: 14px;
+    line-height: 20%;
+}
+
+main .info-video-principal .iconos-info-video-principal{
+    display: flex;
+    margin-top: 5px;
+}
+
+main .iconos-info-video-principal button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    color: #909090;
+    font-weight: bold;
+}
+
+main .iconos-info-video-principal button i{
+    font-size: 18px;
+}
+
+main .iconos-info-video-principal button p{
+    font-size: 14px;
+    color: #606060;
+    margin-left: 5px;
+    margin-right: 15px;
+}
